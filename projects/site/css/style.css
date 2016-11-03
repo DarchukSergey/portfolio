@@ -1,0 +1,259 @@
+body{
+background-image: url(../img/geometry2.png);
+margin: 0;
+padding: 0;
+font: 16px/24px Arial, Tahoma, sans-serif;
+color: #272727;
+}
+a:hover{
+	transition:all 0.5s;
+}
+a{
+	text-decoration: none;
+}
+
+/*структура сайта*/
+div.mid{
+	width: 1000px;
+	margin: 0 auto;
+}
+div.header{
+	padding-top: 20px;
+	background: radial-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0) 250px) 10% -200px no-repeat;
+	background-color: #101417;
+	background-size: 500px 500px;
+
+
+}
+div.footer{
+	margin:20px 0;
+	text-align: center;
+	text-transform: uppercase; 
+}
+/*Шапка сайта*/
+div.topMenu{
+	float: right;
+	height: 70px;
+	line-height: 70px;
+}
+div.topMenu a{
+	margin: 0 0 0 10px;
+	color: #1683a3;
+}
+div.topMenu a:hover{
+	color: #fff;
+}
+div.afisha{
+	margin-top: 20px;
+	padding: 20px 50px 0 50px;
+	background: 
+	linear-gradient( 90deg, #c16a8a 100px, #a367ba 100px, #a367ba 100px, #2b798f 200px, #2b798f 300px, #76a7ac 300px, #76a7ac 400px, #93ae65 400px,#93ae65 500px, #dbb16f  500px)
+	left top repeat-x;
+	background-color: #f2f2f2 ;
+	background-size: 600px 10px;
+}
+div.afisha img{
+	float: left;
+}
+div.afisha h3{
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+	color: #830000;
+}
+div.afisha p{
+	text-align:center;
+}
+div.afisha a{
+	font-size: 20px;
+	color: #fff; 
+	font-weight: bold;
+	background: #b23600;
+	border: 1px solid #862900;
+	padding: 5px 15px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 7px -1px #777;
+}
+div.afisha a:hover{
+	background: #1683A3;
+	border: 1px solid #1683A3;
+}
+/*Главное меню*/
+div.menu{
+	background:#1683a3;
+	border: 1px solid #016c8b;
+	border-left: none;
+	border-right: none;
+}
+div.menu ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+div.menu ul li{
+	display: inline-block;
+	margin: 5px 30px;
+}
+div.menu ul li a{
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow:1px 1px 3px #0b4455;
+}
+div.menu ul li a:hover{
+	color: #a3e1f3;
+}
+/*Контент сайта*/
+div.fon{
+	background: #fff;
+	border:1px solid #ccc;
+	border-top: none;
+	padding: 40px;
+}
+div.fon hr.line {
+	border: none;
+	border-bottom: 1px dashed #ccc;
+	height: 0;
+	margin:40px 0;
+}
+div.block{
+	width: 440px;
+	float: left;
+}
+div.block:nth-of-type(even){
+	float: right;
+}
+div.block a p{
+	color: #272727;
+}
+div.anonce{
+	background: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 20px;
+}
+div.anonce:hover{
+	background: #e0eff4;
+	border: 1px solid #bfd5dd;
+}
+div.anonce:hover img{
+	transform:scale(1.2) rotate(1440deg);
+	transition:transform 0.5s;
+}
+div.block:nth-of-type(even)
+div.anonce:hover img{
+	transform:scale(1.2) rotate(-1440deg);
+}
+div.anonce h3{
+	font-size: 20px;
+	margin: 20px 0 10px;
+	color: #01617d;
+	padding: 0;
+	font-weight: normal;
+	line-height: 20px;
+}
+div.anonce p{
+	text-shadow:1px 1px 0 #fff;
+}
+div.reklama{
+	margin:40px 0;
+}
+div.reklama img{
+	background: #f5f5f5;
+	border: 1px solid #ccc; 
+	border-radius: 3px;
+	position:relative;
+}
+@-webkit-keyframes prigskok{
+	0%{top:0;}
+	10%{top:40px;}
+	20%{top:-30px;}
+	30%{top:40px;}
+	40%{top:-20px;}
+	50%{top:40px;}
+	60%{top:-10px;}
+	70%{top:40px;}
+	80%{top:0;}
+	90%{top:40px;}
+	95%{top:20px;}
+	100%{top:0px;}
+}
+@keyframes prigskok{
+	0%{top:0;}
+	10%{top:40px;}
+	20%{top:-30px;}
+	30%{top:40px;}
+	40%{top:-20px;}
+	50%{top:40px;}
+	60%{top:-10px;}
+	70%{top:40px;}
+	80%{top:0;}
+	90%{top:40px;}
+	95%{top:20px;}
+	100%{top:0px;}
+}
+@-moz-keyframes prigskok{
+	0%{top:0;}
+	10%{top:40px;}
+	20%{top:-30px;}
+	30%{top:40px;}
+	40%{top:-20px;}
+	50%{top:40px;}
+	60%{top:-10px;}
+	70%{top:40px;}
+	80%{top:0;}
+	90%{top:40px;}
+	95%{top:20px;}
+	100%{top:0px;}
+}
+div.reklama img:hover{
+	-webkit-animation:prigskok 1s forwards;
+	animation:prigskok 1s forwards;
+	-moz-animation:prigskok 1s forwards;
+}	
+
+/*Подвал*/
+div.footer span{
+	margin:0 20px; 
+}
+div.clear{
+	clear: both;
+}
+/*Адаптивный дизайн*/
+@media screen and (max-width: 1000px){
+	div.mid{
+	width: 95%;
+	}
+	div.afisha h3{
+	font-size: 22px;
+	}
+	div.block{
+	width: 48%;
+	}
+	div.anonce img,div.reklama img{
+	width: 100%;
+	}
+	div.anonce h3{
+	font-size: 18px;
+}
+@media screen and (max-width: 640px){
+	div.header{
+		text-align: center;
+		background-position: center -130px;
+	}
+	div.topMenu,div.afisha img,div.block,div.block:nth-of-type(even){
+	float:none;
+	}
+	div.block{
+	width: auto;
+	margin-bottom: 40px;
+	}
+	div.block:nth-last-of-type(2){
+		margin-bottom: 0;
+	}
+	div.footer span{
+	margin:10px 0;
+	display: block; 
+}
+
+}

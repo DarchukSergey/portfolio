@@ -1,0 +1,113 @@
+.auth {
+    left: 50%;
+    top: 50%;
+    margin: -150px 0 0 -154.5px ;
+    min-height: 400px;
+    position: absolute;
+    
+}
+.wrapper-auth {
+    background: rgba(0, 0, 0, 0) url("../../img/bg/background.png") 0 0;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    min-height: 320px;
+    min-width: 320px;
+    position: absolute;    
+    text-align: center;    
+}
+
+.wrapper-auth::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+}
+
+.auth-top {
+    background: scroll #fff none 0 0;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    border-radius: 0 7px;
+    font-size: 21px;
+    height: 58px;
+    margin-top: 70px;
+    padding: 80px 60px 20px;
+    position: relative;
+    width: 180px;
+}
+
+.auth-avatar {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    height: 140px;
+    width: 140px;
+    left: 50%;
+    top: -70px;    
+    margin-left: -70px;
+    position: absolute;
+}
+
+.auth-bottom {
+    background: scroll  #33c1e3 none 0 0;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    border-radius:0 0 7px 7px;
+    height: 41px;
+    padding: 20px 0;    
+    width: 300px;
+    text-decoration: none;
+}
+
+.about-download-link-white {
+    border:2px solid #e85f61;
+    border-radius: 40px; 
+    color: #f6f6f6;
+    display: inline-block;
+    font-family: "FiraSansBold";
+    font-size: 14px;
+    padding: 9px 12px;    
+    text-decoration: none;
+}
+.white-link {
+    border-color: #f6f6f6;
+    color: #f6f6f6;
+}
+.about-download-link-white:hover {
+    background: scroll #f6f6f6 none 0 0;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    color: #33c1e3;
+}
+
+.about-right {
+    float: right;
+    width: 56%;
+}
+
+div {
+    display: block;
+}
+
+a {
+    background-color: transparent;
+}
+.wrapper-auth::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+}
+
