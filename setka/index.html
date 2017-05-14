@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Сетка</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css2/style.css" />
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js2/jquery.easing.js"></script>
+	<script type="text/javascript" src="js2/script.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script language="Javascript" type="text/javascript" src="js/jquery.lwtCountdown-1.0.js"></script>
+	<script type="text/javascript" src="http://vk.com/js/api/openapi.js?143"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#cat-menu > li > a").click(function() {
+				event.preventDefault();
+				$(this).next().toggle("300");
+				if ($(this).hasClass("active")) {
+					$(this).removeClass("active");
+				} else {
+					$(this).addClass("active");
+				}
+			});
+			$("#main-menu > li.has_sub").mouseover(function() {
+				$(this).children(".sub-menu").show();
+			});
+			$("#main-menu > li.has_sub").mouseout(function() {
+				$(this).children(".sub-menu").hide();
+			});
+			$('#lofslidecontent45').lofJSidernews( { interval:2000,
+											 	easing:'easeInOutQuad',
+												duration:1200,
+												auto:false } );
+  			$('.bxslider').bxSlider();
+
+			$("#wr-tabs").on("click", ".tab", function(){
+
+				var tabs = $("#wr-tabs .tab"),
+					cont = $("#wr-tabs .tab-cont");
+
+				// Удаляем классы active
+				tabs.removeClass("active");
+				cont.removeClass("active");
+				// Добавляем классы active
+				$(this).addClass("active");
+				cont.eq($(this).index()).addClass("active");
+				return false;
+			});
+
+			$('#countdown_dashboard').countDown({
+				targetOffset: {
+					'day': 		0,
+					'month': 	0,
+					'year': 	0,
+					'hour': 	7,
+					'min': 		15,
+					'sec': 		46
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<section class="filter">
+					<ul class="filter_menu">
+						
+						<li class="filter_menu__view">Вид							
+							<ul>
+								<li id="filter_tile">
+									<a href="#"></a>
+								</li>
+								<li id="filter_line">
+								<a href="#"></a>
+								 </li>
+							</ul>	
+						</li> 
+						<li class="filter_menu__price">
+							<a href="#" >по цене</a>	
+						</li>
+						<li class=" filter_menu__appleative">
+							<a href="#">по названию</a>
+						</li>
+						<li class="filter_menu__page">
+							<ul> на странице
+								<li><a href="#">50</a></li>
+								<li><a href="#">100</a></li>
+								<li><a href="#">200</a></li>
+								<li><a href="#">все</a></li>
+							</ul>
+						</li>	
+						<li>					
+							<ul class="filter_menu__button">
+								<a href="#openModal">Фильтр</a>
+							</ul>
+							
+						</li>
+					</ul>				
+			</section>
+	
+
+		<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Закрыть" class="close">X</a>
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio incidunt est ad obcaecati quae ea hic impedit tenetur velit consequuntur, officia quidem alias, libero rerum animi in, accusamus id voluptates.</div>
+		<div>Voluptatibus voluptatem minus perspiciatis iure nam deleniti dolore voluptatum expedita, atque possimus culpa enim quibusdam amet laudantium facere recusandae ab veniam quidem non! Eos repellendus suscipit laboriosam ipsum sed doloribus.</div>
+		<div>Autem atque unde blanditiis aperiam repellat consequuntur, expedita doloremque iusto? Vel doloremque, repellendus commodi! Quibusdam incidunt ab unde consectetur illo minus voluptatem, tempore voluptatibus aspernatur, consequatur numquam natus provident eaque.</div>
+		<div>Quia consequatur, eum eligendi esse libero labore velit aperiam repudiandae similique, facilis natus minima facere voluptatem, consectetur eius rerum, culpa. Quod aspernatur saepe recusandae illo amet distinctio nobis harum natus!</div>
+		<div>Placeat deleniti labore beatae eveniet mollitia dolore esse, nesciunt dicta, laborum nemo temporibus inventore neque. Unde, fugit, magnam ullam velit architecto consequatur dolores dolore reiciendis. Ipsam facere dignissimos quasi quibusdam.</div>
+
+		<span>Sed, laudantium architecto dolorum? Autem sunt, quae sapiente hic et perferendis maiores distinctio quas pariatur qui? Eaque, dolor. Reiciendis, saepe veniam eum quos tenetur perspiciatis temporibus magnam itaque laudantium odio.</span>
+		</p>
+	</div>
+</div>
+ </body>
+</html>
