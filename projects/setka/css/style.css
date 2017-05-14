@@ -1,0 +1,199 @@
+@font-face {
+    font-family: ProximaNovaRegular;
+    src: url(../font/ProximaNovaRegular.otf);
+    }
+@font-face {
+    font-family: ProximaNovaLight;
+    src: url(../font/ProximaNovaLight.otf);
+    }
+@font-face {
+    font-family: ProximaNovaThin;
+    src: url(../font/ProximaNovaThin.otf);
+    }
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url(../font/ProximaNovaBold.otf);
+    }
+@font-face {
+    font-family: ProximaNovasemibold;
+    src: url(../font/ProximaNovaSemibold.otf);
+    }
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    }
+
+section.text{
+    width: 700px;
+}
+section.filter{
+    border:1px solid  #ff9600;
+    width: 750px;
+    }
+
+.filter_menu{
+    width: 100%;
+    height: 34px;
+    padding: 6px 0 0 0;
+    }
+
+section.filter li{
+    display:block;
+    list-style:none;
+    position: relative;
+    font-family: ProximaNovaRegular;
+    font-size: 16px;
+    color: #b6b4b1;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    text-align: center;
+    text-transform: uppercase;
+    }
+
+.filter_menu__view{
+    padding: 1px 15px 0 25px;
+    }
+
+.filter_menu__view ul{
+    padding: 2px 5px 0 10px;
+    }
+
+.filter_menu__view ul li{
+    margin:0 0 0 3px;
+    }
+.filter_menu__appleative{
+    padding: 0 0 0 19px;
+}
+
+.filter_menu__price{
+    padding: 0 0 0 19px;
+    margin: 0 15px 0 0;
+    }
+
+.filter_menu__page{
+    margin: 0 5px 0 19.62px;
+}
+
+.filter_menu__view ul li:hover{
+    outline: 1px solid #FF9600;
+}
+.filter_menu a,.filter_menu__price li a{
+    text-decoration: none;
+    font-family: ProximaNovaRegular;
+    font-size: 16px;
+    color: #b6b4b1;
+    /*padding: 0 1px;*/
+    }
+
+.filter_menu__page li:first-child{
+    padding-left: 5px;
+    }
+
+.filter_menu__page li a:hover{
+    color: #ff9600; 
+    }
+
+.filter_menu__page li a:active{
+    border-bottom:1px solid #ff9600; 
+    }
+
+.filter_menu__price a:hover, .filter_menu__appleative a:hover{
+    border-bottom:1px solid #ff9600;
+}
+
+#filter_tile, #filter_line, .filter_arrow__up, .filter_arrow__down{
+  display: block-inline;
+  /*text-indent: -9999px;*/
+  width:16px;
+  height:16px;  
+  background-size: 12px 12px;
+    }
+
+#filter_tile{
+    background: url(../img/tile.svg) no-repeat;
+    }
+
+#filter_line{   
+     background: url(../img/lines.svg) no-repeat;
+    }
+
+.filter_menu__price{
+    background: url(../img/up-arrow.svg) no-repeat;
+    /*background:url(../img/down-arrow.svg) no-repeat hidden;*/
+    }
+
+.filter_menu__appleative{
+   /* background: url(../img/up-arrow.svg) no-repeat hidden;*/
+    background:url(../img/down-arrow.svg) no-repeat; 
+    }
+
+.filter_menu__button a{
+    position: inherit;
+    background: #ff9600;
+    padding:8px 21px;    
+    font-family: ProximaNovaRegular;
+    font-size: 16px ;
+    color: #fff;
+    text-transform: uppercase;
+    }
+
+
+    /*******************modalDialog************/
+
+.modalDialog {
+       position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255,255,255 0.2);
+    z-index: 99999;
+     -webkit-transition: opacity 0.2;
+    -moz-transition: opacity 0.2;
+    transition: opacity 0.2;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+
+    
+}
+
+.modalDialog > div {
+    width: 750px;
+    position: relative;
+    margin: 1.74% auto;
+    padding: 5px 20px 13px 20px;
+    background: rgba(87%, 87%, 87%,  0.8);  
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #a3d133; }
