@@ -160,7 +160,8 @@
 }
 .social__icon {
      position: relative;
-    left: 35%;
+    left: 40%;
+    width:110px;
     top: 10px;
 }
 .footer__left {
