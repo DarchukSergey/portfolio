@@ -1042,6 +1042,12 @@ animation:spin .8s infinite linear ;
     {
         display: none;
     }
+    #fp-nav{
+        display: none;
+    }
+    .fp-slidesNav.bottom{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 300px)
