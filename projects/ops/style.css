@@ -1091,5 +1091,10 @@ animation:spin .8s infinite linear ;
 	p.yellow.fw700{
 		text-align: right;
 	}
-	
+    #fp-nav{
+        display: none;
+    }
+	.fp-slidesNav.bottom{
+        display: none;
+    }
     }
