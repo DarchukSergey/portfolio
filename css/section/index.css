@@ -74,7 +74,7 @@
     border-radius: 40px; 
     color: #f6f6f6;
     display: inline-block;
-    font-family: "FiraSansBold";
+    font-family: "FiraSansBold"  ,sans-serif;
     font-size: 14px;
     padding: 9px 12px;    
     text-decoration: none;

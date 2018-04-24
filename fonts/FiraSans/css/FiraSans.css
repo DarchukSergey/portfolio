@@ -2,13 +2,22 @@
 @font-face {
     font-family: "FiraSansRegular";
     src: url("../fonts/FiraSans-Regular.ttf");
+    src: url("../fonts/firasans-regular.eot");
+    src: url("../fonts/firasans-regular.svg");
+    src: url("../fonts/firasans-light.woff");
+    src: url("../fonts/FiraSans-Regular.woff2");
     font-style: normal;
     font-weight: normal;
 }
 /* font-family: "FiraSansBold"; */
 @font-face {
     font-family: "FiraSansBold";
-    src: url("../fonts/FiraSans-Bold.ttf");
+    
+    src: url("../fonts/firasans-bold.eot");
+    src: url("../fonts/FiraSans-Bold.ttf);
+    src: url("../fonts/firasans-bold.svg");
+    src: url("../fonts/firasans-bold.woff");
+    src: url("../fonts/firasans-bold.woff2");
     font-style: normal;
     font-weight: normal;
 }
@@ -16,6 +25,10 @@
 @font-face {
     font-family: "FiraSansMedium";
     src: url("../fonts/FiraSans-Medium.ttf");
+    src: url("../fonts/firasans-medium.eot");
+    src: url("../fonts/firasans-medium.svg");
+    src: url("../fonts/firasans-medium.woff");
+    src: url("../fonts/firasans-medium.woff2");
     font-weight: normal;
     font-style: normal;
 }
@@ -23,6 +36,10 @@
 @font-face {
     font-family: "FiraSansLight";
     src: url("../fonts/FiraSans-Light.ttf");
+    src: url("../fonts/firasans-light.eot");
+    src: url("../fonts/firasans-light.svg");
+    src: url("../fonts/firasans-light.woff");
+    src: url("../fonts/firasans-light.woff2");
     font-style: normal;
     font-weight: normal;
 }

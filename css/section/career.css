@@ -9,6 +9,6 @@
     min-width: 220px;
 }
 .career__occupation, .career__date {
-    font-family: "FiraSansLight";
+    font-family: "FiraSansLight", sans-serif;
     font-size: 18px;
 }

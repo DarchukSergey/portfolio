@@ -1,6 +1,6 @@
 html, body {
     background: #f6f6f6;
-    font-family: "FiraSansRegular";    
+    font-family: "FiraSansRegular", sans-serif;    
     height: 100%;
     line-height: 1.42;
     width: 100%;

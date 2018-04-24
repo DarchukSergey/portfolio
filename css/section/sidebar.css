@@ -64,7 +64,7 @@
     border-radius: 40px;
     color: #e85f61;
     display: inline-block;
-    font-family: "FiraSans-Bold";
+    font-family: "FiraSans-Bold"  ,sans-serif;
     font-size: 14px;
     padding: 9px 12px;
     text-decoration: none;
@@ -107,7 +107,7 @@
     margin-bottom: 5px;
 }
      {
-    font-family: "FiraSansLight";
+    font-family: "FiraSansLight"  ,sans-serif;
     font-size: 18px;
 }
 .career__pic-img {
@@ -182,7 +182,7 @@
 }
 .content-title {
     color: #414141;
-    font-family: "FiraSansMedium";
+    font-family: "FiraSansMedium"  ,sans-serif;
     font-size: 35px;
     font-weight: normal;
     line-height: 38px;
