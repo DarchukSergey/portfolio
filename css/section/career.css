@@ -12,3 +12,7 @@
     font-family: "FiraSansLight";
     font-size: 18px;
 }
+.career__title a{
+    text-decoration: none;
+    color: #33c1e3;;
+}
