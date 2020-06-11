@@ -982,7 +982,7 @@ animation:spin .8s infinite linear ;
     }
     .left
     {
-        width: 50%
+        width: 50%;
         margin-top: 0;
     }
     .img__box

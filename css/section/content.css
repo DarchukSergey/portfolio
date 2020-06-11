@@ -15,16 +15,10 @@ ul {
     font-size: 18px;
     padding: 10px 20px 10px 0;
     text-decoration: none;
+    transition: .2s;
 }
 
 .nav__link:hover {
-    border-right: 6px solid transparent; 
-  -webkit-border-image:
-  -webkit-gradient(to top, rgba(57, 184, 217, 1), rgba(46, 199, 241, 1)) 1 100%;
-  -webkit-border-image: -webkit-linear-gradient(to top, rgba(57, 184, 217, 1), rgba(46, 199, 241, 1)) 1 100%;
-  -moz-border-image: -moz-linear-gradient(to top, rgba(57, 184, 217, 1), rgba(46, 199, 241, 1)) 1 100%;
-  -o-border-image: -o-linear-gradient(to top, rgba(57, 184, 217, 1), rgba(46, 199, 241, 1)) 1 100%; 
-    border-image: linear-gradient(to top, rgba(57, 184, 217, 1), rgba(46, 199, 241, 1)) 1 100%;
     color: #33c1e3;
 }
 .nav__link:active {
@@ -68,7 +62,7 @@ ul {
     line-height: 26px;
 }
 .about__text {
-    height: 300px;
+    height: 500px;
     margin-bottom: 44px;
     overflow: auto;
 }
@@ -103,12 +97,15 @@ ul {
     float: right;
     width: 445px;
 }
+.career__item *{
+    transition:.2s;
+}
 .career__item:hover .career__block {
     background: #33c1e3;
 }
-.career__item:hover * {
+.career__item:hover *{
     color: #fff;
-    transition:.5s;
+    
 }
 .career__item:hover .career__year {
     color: #33c1e3;
@@ -198,7 +195,7 @@ ul {
 }
 .info {
     float: right;
-    width: 73%;
+    width: 72%;
 }
 .content-title {
     color: #414141;
@@ -255,4 +252,36 @@ ul {
 .portfolio__desc-type {
     color: #aeaeae;
     font-size: 18px;
+}
+.info__price{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.head__price{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.price__table{
+        width: 100%;
+        border-collapse:collapse;
+        border-spacing:0;
+        margin-bottom: 40px;
+}
+
+.price__table, 
+.price__table tr td,
+.price__table tr th{
+    border: 1px solid #ccc;
+}
+.price__table td,
+.price__table th{
+    padding: 10px;
+}
+.price__table td:last-child{
+    text-align:center;
+}
+.price__calc{
+    text-align: center;
 }
